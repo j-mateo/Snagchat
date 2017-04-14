@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FFFC00</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryDark">#d6d300</color>
+    <color name="colorAccent">#800080</color>
+    <color name="loginButtonBg">#E62C57</color>
+    <color name="signupButtonBg">#44B2E0</color>
+    <color name="loginButtonText">@android:color/white</color>
+    <color name="signupButtonText">@android:color/white</color>
 </resources>
