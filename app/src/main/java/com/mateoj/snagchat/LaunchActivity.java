@@ -42,7 +42,8 @@ public class LaunchActivity extends AppCompatActivity {
             startTask = new Runnable() {
                 @Override
                 public void run() {
-                    //                MainActivity.start(this);
+                    MainActivity.start(LaunchActivity.this);
+                    finish();
 
                 }
             };

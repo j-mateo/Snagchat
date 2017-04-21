@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.mateoj.snagchat.CameraFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.flurgle.camerakit.CameraView xmlns:camerakit="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        camerakit:ckFacing="back"
+        camerakit:ckFlash="off"
+        camerakit:ckFocus="continuous"
+        camerakit:ckMethod="still"
+        camerakit:ckZoom="pinch"
+        camerakit:ckPermissions="strict"
+        camerakit:ckCropOutput="true"
+        camerakit:ckJpegQuality="100"
+        camerakit:ckVideoQuality="max480p"
+        android:adjustViewBounds="true" />
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/ic_camera_white_48dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        />
+
+</FrameLayout>

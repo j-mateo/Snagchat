@@ -32,6 +32,13 @@ public class SignupNameFragment extends Fragment  {
     @BindView(R.id.signup_last_name)
     EditText lastName;
 
+    @BindView(R.id.signup_email)
+    EditText email;
+
+    @BindView(R.id.signup_password)
+    EditText password;
+
+
     private Callbacks callbacks;
 
     public SignupNameFragment() {
@@ -69,7 +76,10 @@ public class SignupNameFragment extends Fragment  {
 
     @OnClick(R.id.signup_btn)
     public void onSignupClicked() {
-        this.callbacks.onNameEntered(firstName.getText().toString(), lastName.getText().toString());
+        this.callbacks.onNameEntered(firstName.getText().toString(),
+                lastName.getText().toString(),
+                email.getText().toString(),
+                password.getText().toString());
     }
 
     @Override
@@ -79,6 +89,6 @@ public class SignupNameFragment extends Fragment  {
     }
 
     interface Callbacks {
-        void onNameEntered(String firstName, String lastName);
+        void onNameEntered(String firstName, String lastName, String email, String password);
     }
 }

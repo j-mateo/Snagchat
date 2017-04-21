@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.mateoj.snagchat.MainActivity;
 import com.mateoj.snagchat.R;
 
 import butterknife.BindView;
@@ -34,16 +35,23 @@ public class SignupActivity extends AppCompatActivity implements SignupContract.
     }
 
     @Override
-    public void onNameEntered(String firstName, String lastName) {
-        this.presenter.nameEntered(firstName, lastName);
+    public void onNameEntered(String firstName, String lastName, String email, String password) {
+        this.presenter.nameEntered(firstName, lastName, email, password);
     }
 
     @Override
     public void showBirthdayFragment() {
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.fragment_container, SignupBirthdayFragment.newInstance())
-                .commit();
+        MainActivity.start(this);
+//        getSupportFragmentManager()
+//                .beginTransaction()
+//                .replace(R.id.fragment_container, SignupBirthdayFragment.newInstance())
+//                .commit();
+    }
+
+    @Override
+    public void showMainActivity() {
+        MainActivity.start(this);
+        finish();
     }
 
     @Override

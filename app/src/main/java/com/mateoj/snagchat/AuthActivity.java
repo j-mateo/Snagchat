@@ -26,7 +26,8 @@ public class AuthActivity extends AppCompatActivity {
 
     @OnClick(R.id.login_btn)
     public void onLoginClicked() {
-        LoginActivity.start(this);
+//        LoginActivity.start(this);
+        MainActivity.start(this);
     }
 
     @OnClick(R.id.signup_btn)

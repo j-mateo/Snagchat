@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "388466438225",
+    "firebase_url": "https://snagchat-f05de.firebaseio.com",
+    "project_id": "snagchat-f05de",
+    "storage_bucket": "snagchat-f05de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388466438225:android:936c415ce3678057",
+        "android_client_info": {
+          "package_name": "com.mateoj.snagchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388466438225-76nfmvv11opjji04vcium4krqhfmep9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpn2ovA320gO-FdKFp8bkziA0Wq8yn3FQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

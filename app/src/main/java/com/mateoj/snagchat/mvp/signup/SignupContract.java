@@ -7,11 +7,13 @@ package com.mateoj.snagchat.mvp.signup;
 public interface SignupContract {
     interface SignupView {
         void showBirthdayFragment();
+
+        void showMainActivity();
     }
 
     interface SignupPresenter {
         void onStop();
         void onStart();
-        void nameEntered(String first, String last);
+        void nameEntered(String first, String last, String email, String password);
     }
 }
