@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.mateoj.snagchat.MainActivity;
 import com.mateoj.snagchat.R;
@@ -52,6 +53,11 @@ public class SignupActivity extends AppCompatActivity implements SignupContract.
     public void showMainActivity() {
         MainActivity.start(this);
         finish();
+    }
+
+    @Override
+    public void showError(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     @Override

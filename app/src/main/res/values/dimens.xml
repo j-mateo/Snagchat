@@ -5,4 +5,5 @@
     <dimen name="auth_button_text_size">26sp</dimen>
     <dimen name="auth_view_margin">32dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
 </resources>

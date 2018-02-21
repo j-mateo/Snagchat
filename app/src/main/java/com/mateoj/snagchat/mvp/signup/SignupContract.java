@@ -9,6 +9,8 @@ public interface SignupContract {
         void showBirthdayFragment();
 
         void showMainActivity();
+
+        void showError(String message);
     }
 
     interface SignupPresenter {

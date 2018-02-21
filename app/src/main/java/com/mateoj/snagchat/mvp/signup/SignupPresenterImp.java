@@ -35,14 +35,11 @@ public class SignupPresenterImp implements SignupContract.SignupPresenter {
     @Override
     public void nameEntered(String first, String last, String email, String password) {
         AuthProvider.getInstance().SignUp(email, password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            view.showMainActivity();
-                        } else {
-                            task.getException().printStackTrace();
-                        }
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        view.showMainActivity();
+                    } else {
+                       view.showError(task.getException().getLocalizedMessage());
                     }
                 });
     }

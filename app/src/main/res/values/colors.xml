@@ -7,4 +7,5 @@
     <color name="signupButtonBg">#44B2E0</color>
     <color name="loginButtonText">@android:color/white</color>
     <color name="signupButtonText">@android:color/white</color>
+    <color name="image_text_overlay">#af000000</color>
 </resources>
